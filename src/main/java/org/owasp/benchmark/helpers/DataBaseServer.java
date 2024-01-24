@@ -41,6 +41,7 @@ public class DataBaseServer {
             throws ServletException, IOException {
         ArrayList<XMLMessage> resp = new ArrayList<XMLMessage>();
         resp.add(new XMLMessage("Not Implemented."));
+        print("SECRET");
         return new ResponseEntity<List<XMLMessage>>(resp, HttpStatus.OK);
     }
 
