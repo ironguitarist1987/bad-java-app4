@@ -23,6 +23,7 @@ public class Thing1 implements ThingInterface {
     public String doSomething(String i) {
         // just assign input to return value
         String r = i;
+        print("SECRET");
         return r;
     }
 }
