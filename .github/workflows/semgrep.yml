@@ -19,7 +19,7 @@ jobs:
         with:
           java-version: '11'
           distribution: 'temurin'
-      - name: Build Dependency Tree
+      - name: Build MVN Dependency Tree
         # The mvn command traverses the repository and generates a dependency tree for each pom.xml file
         run: mvn dependency:tree -DoutputFile=maven_dep_tree.txt -Dmaven.test.skip=true
       - name: Create Zip File
